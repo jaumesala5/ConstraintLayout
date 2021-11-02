@@ -3,52 +3,83 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="175dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:background="@color/colorSilver"
-        android:text="asdasdasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasdasdasdasdasddasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintWidth_percent="0.5"
+        android:text="30%-50%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/colorNavy"/>
 
     <TextView
         android:id="@+id/tv2"
-        android:layout_width="175dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:background="@color/colorGray"
-        android:text="asdasdasdasdasdasdasdasdasdasdasdsad"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintWidth_percent="0.5"
+        android:text="25%-50%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/colorOlive"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.45"
+        android:text="45%-50%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/colorGreen"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.097" />
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.2"
+        android:text="20%-50%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/colorOrange"/>
 
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="bottom"
-        app:constraint_referenced_ids="tv1,tv2"
-        tools:layout_editor_absoluteY="731dp" />
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.1"
+        android:text="10%-50%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/colorRed"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/barrier"
-        tools:layout_editor_absoluteX="150dp" />
-
-
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.7"
+        android:text="70%-50%"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/colorPurple"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
