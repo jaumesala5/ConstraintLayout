@@ -6,157 +6,153 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/punt"
+        android:id="@+id/packed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:gravity="center_horizontal"
+        android:text="Packed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/pa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorOrange"
+        android:text="packet A"
+        app:layout_constraintEnd_toStartOf="@+id/pb"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/packed" />
+
+    <TextView
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorOrange"
+        android:text="packet B"
+        app:layout_constraintEnd_toStartOf="@+id/pc"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pa"
+        app:layout_constraintTop_toBottomOf="@+id/packed" />
+
+    <TextView
+        android:id="@+id/pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange"
+        android:text="packet C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pb"
+        app:layout_constraintTop_toTopOf="@+id/pb" />
+
+    <TextView
+        android:id="@+id/spread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:text="Spread"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/punt"
-        app:layout_constraintCircle="@id/punt"
-        app:layout_constraintCircleAngle="30"
-        app:layout_constraintCircleRadius="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/packed"
+        app:layout_constraintVertical_bias="0.001" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/punt"
-        app:layout_constraintCircle="@id/punt"
-        app:layout_constraintCircleAngle="60"
-        app:layout_constraintCircleRadius="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+    android:id="@+id/sd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@color/colorOrange"
+    android:text="spread D"
+    app:layout_constraintEnd_toStartOf="@+id/se"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintHorizontal_chainStyle="spread"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/spread" />
 
     <TextView
+        android:id="@+id/se"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/punt"
-        app:layout_constraintCircle="@id/punt"
-        app:layout_constraintCircleAngle="90"
-        app:layout_constraintCircleRadius="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        android:layout_marginTop="20dp"
+        android:background="@color/colorOrange"
+        android:text="spread E"
+        app:layout_constraintEnd_toStartOf="@+id/sf"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sd"
+        app:layout_constraintTop_toBottomOf="@+id/spread" />
 
     <TextView
+        android:id="@+id/sf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="4"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/punt"
-        app:layout_constraintCircle="@id/punt"
-        app:layout_constraintCircleAngle="120"
-        app:layout_constraintCircleRadius="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        android:layout_marginTop="20dp"
+        android:background="@color/colorOrange"
+        android:text="spread F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/se"
+        app:layout_constraintTop_toBottomOf="@+id/spread" />
 
     <TextView
+        android:id="@+id/spread_inside"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/punt"
-        app:layout_constraintCircle="@id/punt"
-        app:layout_constraintCircleAngle="150"
-        app:layout_constraintCircleRadius="100dp"
+        android:text="Spread Inside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/spread"
+        app:layout_constraintVertical_bias="0.266" />
+
+
+
+
 
     <TextView
+        android:id="@+id/sig"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="6"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/punt"
-        app:layout_constraintCircle="@id/punt"
-        app:layout_constraintCircleAngle="180"
-        app:layout_constraintCircleRadius="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        android:layout_marginTop="50dp"
+        android:background="@color/colorOrange"
+        android:text="spread inside G"
+        app:layout_constraintEnd_toStartOf="@+id/sii"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sih"
+        app:layout_constraintTop_toBottomOf="@+id/spread_inside" />
 
     <TextView
+        android:id="@+id/sih"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="7"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/punt"
-        app:layout_constraintCircle="@id/punt"
-        app:layout_constraintCircleAngle="210"
-        app:layout_constraintCircleRadius="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorOrange"
+        android:text="spread inside H"
+        app:layout_constraintEnd_toStartOf="@+id/sig"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/spread_inside" />
 
     <TextView
+        android:id="@+id/sii"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="8"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/punt"
-        app:layout_constraintCircle="@id/punt"
-        app:layout_constraintCircleAngle="240"
-        app:layout_constraintCircleRadius="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="9"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/punt"
-        app:layout_constraintCircle="@id/punt"
-        app:layout_constraintCircleAngle="270"
-        app:layout_constraintCircleRadius="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/punt"
-        app:layout_constraintCircle="@id/punt"
-        app:layout_constraintCircleAngle="300"
-        app:layout_constraintCircleRadius="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="11"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/punt"
-        app:layout_constraintCircle="@id/punt"
-        app:layout_constraintCircleAngle="330"
-        app:layout_constraintCircleRadius="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="12"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/punt"
-        app:layout_constraintCircle="@id/punt"
-        app:layout_constraintCircleAngle="0"
-        app:layout_constraintCircleRadius="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-    />
+        android:layout_marginTop="50dp"
+        android:background="@color/colorOrange"
+        android:text="spread inside I"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sih"
+        app:layout_constraintTop_toBottomOf="@+id/spread_inside" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
